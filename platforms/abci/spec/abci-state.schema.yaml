@@ -1,0 +1,30 @@
+# ABCI typed state claim schema draft
+version: 0.1.0
+required_fields:
+  - id
+  - type
+  - value
+  - confidence
+  - timestamp_utc
+  - expires_at_utc
+  - provenance
+  - permissions
+fields:
+  id: globally unique event/state identifier
+  type: controlled vocabulary path such as neural.theta_power or cognitive.focus
+  value: numeric, categorical, vector, or token payload
+  confidence: 0.0 to 1.0
+  timestamp_utc: ISO-8601 event time
+  expires_at_utc: ISO-8601 validity limit
+  provenance:
+    source_modality: eeg | ecg | emg | gsr | temp | simulated | derived | other
+    adapter: adapter identifier
+    device: device identifier or simulated source
+    transform_chain: ordered list of transforms/models
+    calibration_id: optional calibration reference
+    artifact_flags: list of known quality issues
+  permissions:
+    scope: allowed use scope
+    raw_export_allowed: boolean
+    retention: ephemeral | session | local_archive | exportable
+    identity_binding_allowed: boolean
