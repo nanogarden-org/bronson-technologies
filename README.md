@@ -23,7 +23,7 @@ The ABCI simulated emitter can be checked with Python 3.11+:
 python platforms/abci/examples/python/simulated_abci_emit.py
 ```
 
-The check should produce a typed, time-bounded state claim marked as simulated, with raw export and identity binding disabled. GitHub Actions also compiles and exercises the emitter on pushes and pull requests to `main`.
+The check should produce a typed, time-bounded state claim marked as simulated, with raw export and identity binding disabled. This command is the canonical manual verification path.
 
 ## Repository map
 
