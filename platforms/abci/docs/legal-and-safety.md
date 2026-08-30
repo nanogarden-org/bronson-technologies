@@ -48,4 +48,4 @@ The corpus inventory preserves file names, dates, sizes, and SHA-256 hashes to e
 
 ## Publication posture
 
-Recommended initial status: **private repo / research-preview / no medical claims / no security claims beyond architectural intent.**
+Current status for this repository: **public research-preview / no medical claims / no security claims beyond architectural intent.** Keep the package clearly marked as experimental and do not add real physiological data without the consent, retention, deletion, and safety controls described above.
