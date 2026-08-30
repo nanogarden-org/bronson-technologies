@@ -39,7 +39,7 @@ ABCI is not a medical device, diagnostic system, treatment, or validated biometr
 
 ## Public-release posture
 
-This package is a research preview inside `bronson-technologies`. No final open-source license is asserted for the ABCI extraction; do not treat publication of the repository as permission to reuse third-party corpus material or as evidence of clinical, security, or commercial readiness.
+This package is a research preview inside `bronson-technologies` and is an original creation of Bronson Technologies / NanoGarden. No separate license notice has yet been selected for the ABCI material; that concerns reuse permissions, not authorship. Publication does not imply clinical, security, or commercial readiness.
 
 ## Next implementation gate
 
