@@ -43,4 +43,4 @@ Each public claim should identify its evidence, maturity level, limitations, and
 
 Keep secrets, private client data, unpublished commercial material, private credential identifiers, and third-party content without permission out of this repository. Public release does not turn an unsupported claim into evidence: retain the distinction between draft, research preview, tested demonstration, and production system.
 
-The repository does not currently assert a separate open-source license for the ABCI extraction. Check the applicable file-level notices before reusing research or portfolio material.
+ABCI is an original creation of Bronson Technologies / NanoGarden. Authorship and licensing are separate: this repository does not yet include a separate license notice defining reuse permissions for the ABCI research-preview material.
