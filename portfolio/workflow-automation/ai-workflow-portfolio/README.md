@@ -2,9 +2,9 @@
 
 A portfolio demonstration of a bounded, provenance-aware AI workflow chain that converts raw evidence into structured reasoning, an explicit workflow plan, persistent project state, a reusable process, and a finished deliverable.
 
-## Portfolio Claim
+## Current status
 
-This project demonstrates the ability to design and operate an AI-assisted workflow as a system rather than as a single prompt.
+**Architecture bounded; demonstration runs not yet completed.**
 
 The public demonstration chain is:
 
@@ -22,85 +22,23 @@ Reusable / Automated Process
 Finished Output
 ```
 
-Each stage has a distinct responsibility and produces an inspectable handoff artifact.
+The repository currently contains the workflow specification and run templates. It does not yet contain completed public-safe Run 001 or Run 002 outputs, so it should not be presented as a completed case study.
 
-## What This Demonstrates
+## Public demonstration boundary
 
-- evidence capture and provenance
-- structured reasoning and mechanism mapping
-- workflow decomposition
-- deliberate capability selection
-- review gates and human-judgment boundaries
-- persistent project state
-- resumability and handoffs
-- reusable process extraction
-- bounded automation
-- finished, reviewable outputs
+Include only:
 
-## Public Demonstration Strategy
+- public-safe workflow specifications;
+- synthetic, licensed, public-domain, or user-owned demonstration inputs;
+- selected public-safe skills and schemas;
+- intermediate artifacts necessary to inspect the chain;
+- finished outputs; and
+- tests, run logs, and limitations.
 
-The project uses one workflow grammar with two demonstration runs.
+Keep private source corpora, private conversation identifiers, credentials, unpublished commercial material, and unrelated internal tooling outside the public release.
 
-### Run 001 — Research / Analysis
+## Success criteria
 
-```text
-source material
-→ PIRATE evidence capture
-→ THREAD reasoning map
-→ AI workflow plan
-→ project vault
-→ execution + review
-→ finished analysis
-```
-
-### Run 002 — Production / Delivery
-
-```text
-brief + source material
-→ PIRATE evidence capture
-→ THREAD reasoning map
-→ AI workflow plan
-→ project vault
-→ execution + review
-→ finished production artifact
-```
-
-The two runs should differ in domain and output while preserving the same process grammar.
-
-## Repository Boundary
-
-This repository is a public demonstration layer.
-
-It should include only:
-
-- public-safe workflow specifications
-- synthetic, licensed, public-domain, or user-owned demonstration inputs
-- selected public-safe skills and schemas
-- intermediate artifacts necessary to inspect the chain
-- finished outputs
-- tests, run logs, and limitations
-
-Private source corpora, private conversation identifiers, credentials, unpublished commercial material, and unrelated internal tooling remain outside the public repository.
-
-## Success Criteria
-
-A technically literate reviewer should be able to answer:
-
-1. What problem does the workflow solve?
-2. What does each stage contribute?
-3. What enters and leaves each stage?
-4. Where does human judgment occur?
-5. How is provenance preserved?
-6. How does the workflow recover or resume after interruption?
-7. What was automated and what was deliberately not automated?
-8. What finished artifact did the workflow produce?
-9. Can the same workflow grammar operate in a second domain?
-10. What limitations remain?
-
-If those questions can be answered from the repository without reconstructing private context, the demonstration is portfolio-ready.
-
-## Status
-
-**Current state:** architecture bounded; demonstration runs not yet completed.
+A technically literate reviewer should be able to determine what each stage contributes, what enters and leaves each stage, where human judgment occurs, how provenance is preserved, how the workflow resumes after interruption, what was automated, what was not automated, and what finished artifact was produced.
 
 **Next gate:** complete Run 001 end-to-end with public-safe inputs and preserve every stage handoff.
