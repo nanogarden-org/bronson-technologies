@@ -1,0 +1,32 @@
+name: Bronson Technologies CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  abci-simulated:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Compile ABCI Python files
+        run: python -m py_compile platforms/abci/examples/python/simulated_abci_emit.py platforms/abci/tests/test_simulated_abci_emit.py
+
+      - name: Run ABCI integrity tests
+        run: python -m unittest discover -s platforms/abci/tests -v
+
+      - name: Run simulated emitter
+        run: python platforms/abci/examples/python/simulated_abci_emit.py
