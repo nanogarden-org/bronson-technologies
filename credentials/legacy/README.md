@@ -1,4 +1,6 @@
-﻿# Legacy Credentials
+# Legacy Credentials
+
+**Current status:** no historical credential record has been approved or published in this directory.
 
 List earlier credentials only when they support the professional timeline. Clearly label expired or retired credentials and avoid implying current certification.
 
