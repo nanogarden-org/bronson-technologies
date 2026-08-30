@@ -40,8 +40,10 @@ The check should produce a typed, time-bounded state claim marked as simulated, 
 
 Each public claim should identify its evidence, maturity level, limitations, and verification method. Appropriate maturity labels include `concept`, `prototype`, `implemented toolkit`, `tested demo`, `deployed pilot`, and `production system`.
 
-## Publication boundary
+## Authorship and publication boundary
 
-ABCI is an original creation of Bronson Technologies / NanoGarden. The repository currently does not publish a license file, so public visibility confirms authorship and publication—not a general permission to reuse the ABCI material. Add an explicit license only when you want to define reuse terms.
+ABCI and the original Bronson Technologies content and repository structures are created and owned by Robert Bronson, also published under the author name Robin A Bronson. See [`AUTHORS.md`](AUTHORS.md) for the public attribution statement and the distinction between the author-name alias and the `nanogarden-org` GitHub hosting identity.
+
+The repository currently does not publish a license file for the original Bronson Technologies material, so public visibility confirms authorship and publication—not a general permission to reuse it. Add an explicit license only when you want to define reuse terms. Third-party names, logos, certificate records, course materials, and linked resources remain attributed to their respective owners.
 
 Keep secrets, private client data, unpublished commercial material, private credential identifiers, and third-party content without permission out of this repository. Public release does not turn an unsupported claim into evidence: retain the distinction between draft, research preview, tested demonstration, and production system.
