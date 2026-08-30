@@ -19,17 +19,8 @@ PIRATE
 → Finished Output
 ```
 
-**Demonstrates:**
-- evidence capture and provenance
-- structured reasoning and mechanism mapping
-- workflow decomposition and capability selection
-- review gates and human-judgment boundaries
-- persistent state, resumability, and handoffs
-- reusable process extraction and bounded automation
-- finished, inspectable deliverables
+**Current maturity:** architecture bounded / demonstration runs pending.
 
-**Project:** [`ai-workflow-portfolio/`](./ai-workflow-portfolio/)
+**Next release gate:** complete two public-safe demonstration runs using the same workflow grammar, preserve stage handoffs and review decisions, document failure/recovery behavior, and include finished outputs. Until then, this is a documented portfolio candidate rather than a completed public case study.
 
-**Current maturity:** architecture bounded / demonstration runs pending
-
-**Portfolio-ready gate:** complete two public-safe demonstration runs using the same workflow grammar, preserve stage handoffs and review decisions, document failure/recovery behavior, and include finished outputs.
+See [the project README](./ai-workflow-portfolio/README.md) for the detailed boundary.
