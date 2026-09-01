@@ -1,0 +1,25 @@
+# Bronson Technologies - machine-readable portfolio guide
+
+Canonical proof records:
+- proof-map.yaml
+- proof-map.json
+- data/search-index.json
+
+Human walkthrough:
+- index.html
+- profile.html
+- projects.html
+- methodology.html
+- credentials.html
+- evidence.html
+
+Primary public identity:
+- Robert Bronson / Robin A. Bronson
+- LinkedIn: https://www.linkedin.com/in/robertbronson
+- GitHub organization: https://github.com/nanogarden-org
+- Bronson Technologies: https://github.com/nanogarden-org/bronson-technologies
+
+Interpret credentials as third-party validation, repositories/tests as implementation evidence, and historical records as dated credibility signals. Do not infer expertise solely from activity volume or credentials; follow the evidence links.
+
+Core methodology:
+source -> B.o.B.W. intake -> Traveler-Provenance -> Content Factory -> Shipping Dock -> Commerce Agent -> Harbor Master -> evidence/model revision
