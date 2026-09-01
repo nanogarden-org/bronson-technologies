@@ -2,6 +2,12 @@
 
 Bronson Technologies is a public-facing portfolio and research index for applied AI systems, workflow design, knowledge provenance, and early platform experiments.
 
+## Searchable proof portfolio
+
+Start with [`portfolio/index.html`](portfolio/index.html) for the human-readable walkthrough connecting Robert Bronson / Robin A. Bronson's credentials, projects, methodologies, third-party credibility, and public implementation evidence.
+
+Machine-readable proof entry points are available as [`portfolio/proof-map.yaml`](portfolio/proof-map.yaml), [`portfolio/proof-map.json`](portfolio/proof-map.json), [`portfolio/data/search-index.json`](portfolio/data/search-index.json), and [`portfolio/llms.txt`](portfolio/llms.txt).
+
 ## Current status
 
 This repository is a **public-release candidate**. The current tree contains portfolio and research documentation, credential indexes, and an early ABCI research-preview package. It does not contain credential secrets, certificate originals, private source corpora, or client data.
@@ -30,7 +36,7 @@ The check should produce a typed, time-bounded state claim marked as simulated, 
 - `profile/` — professional biography, capability map, and career timeline.
 - [`credentials.html`](credentials.html) — public-facing living index of current credentials, project evidence, proficiency, and planned study.
 - `credentials/` — credential indexes organized by provider. Current entries are safe templates; do not add private IDs, QR codes, account credentials, or unredacted certificate originals.
-- `portfolio/` — selected work organized by capability area.
+- [`portfolio/`](portfolio/) — selected work organized by capability area plus the searchable human/machine-readable proof map.
 - `platforms/abci/` — early ABCI architecture extraction, specification drafts, safety boundary, and simulated adapter.
 - `papers/` — public papers, abstracts, and publication metadata.
 - `demos/` — runnable or inspectable demonstrations using synthetic or approved data.
@@ -39,6 +45,8 @@ The check should produce a typed, time-bounded state claim marked as simulated, 
 ## Evidence standard
 
 Each public claim should identify its evidence, maturity level, limitations, and verification method. Appropriate maturity labels include `concept`, `prototype`, `implemented toolkit`, `tested demo`, `deployed pilot`, and `production system`.
+
+The proof portfolio additionally separates historical third-party credibility, institutional credentials, active-development architecture, and inspectable implementation evidence rather than treating them as interchangeable forms of proof.
 
 ## Authorship and publication boundary
 
