@@ -1,0 +1,72 @@
+schema: bronson-technologies-proof-map/v1
+last_reviewed: '2026-08-31'
+identity:
+  professional_name: Robert Bronson
+  publishing_name: Robin A. Bronson
+  organization: Bronson Technologies / nanogarden-org
+  positioning: AI Systems Designer · Workflow Architect · Applied AI / Automation
+  linkedin: https://www.linkedin.com/in/robertbronson
+  github_org: https://github.com/nanogarden-org
+  github_root: https://github.com/nanogarden-org/bronson-technologies
+credentials:
+  - issuer: OpenAI Academy
+    name: AI Foundations
+    date: '2026-08-09'
+    validator: https://academy.openai.com/public/certificate/hqkzjes7nb
+  - issuer: OpenAI Academy
+    name: Applied AI Foundations
+    date: '2026-08-10'
+    validator: https://academy.openai.com/home/certificate/cc6cxgvbru
+  - issuer: OpenAI Academy
+    name: Agents and Workflows
+    date: '2026-08-10'
+    validator: https://academy.openai.com/home/certificate/7004jca914
+  - issuer: IBM SkillsBuild / Credly
+    name: AI Literacy
+    date: '2026-08-21'
+    validator: https://www.credly.com/go/DOerlJgI
+  - issuer: The Linux Foundation / Credly
+    name: 'LFEL1002: Getting Started with Rust'
+    date: '2026-08-25'
+    validator: https://www.credly.com/badges/d5ff5ecb-bfb6-4adc-845f-8a008fc16309/public_url
+projects:
+  - name: Bronson Technologies
+    url: https://github.com/nanogarden-org/bronson-technologies
+    tags: [AI-architecture-workflow-design-portfolio-provenance]
+  - name: TurtleML
+    url: https://github.com/nanogarden-org/TurtleML
+    tags: [edge-AI-local-first-distributed-systems-authority]
+  - name: ABCI
+    url: https://github.com/nanogarden-org/ABCI
+    tags: [interfaces-edge-integrity-provenance]
+  - name: LCA-MVP
+    url: https://github.com/nanogarden-org/LCA-MVP
+    tags: [identity-continuity-provenance-Python-Rust]
+  - name: B.o.B.W. (Best of Both Worlds)
+    status: active development
+    tags: [traveler-provenance-ingestion-rights-traceability]
+  - name: Content Factory / NanoGarden Production System
+    status: active development
+    tags: [content-factory-NanoGarden-production-workflow]
+  - name: Shipping Dock
+    status: active development
+  - name: Scout + PIRATE + THREAD
+    status: active development
+  - name: Harbor Master
+    status: active development
+  - name: SARAH
+    status: experimental
+  - name: Phonic-Drive
+    status: active development
+historical_evidence:
+  - date: '2009-01-19'
+    type: third-party client recommendation
+    article: articles/2009-client-recommendation.html
+  - date: '2024-06-28'
+    type: LinkedIn platform recognition signal
+    article: articles/2024-linkedin-expert-invitation.html
+proof_paths:
+  - credential → implementation → repository evidence
+  - source → traveler-provenance → transformation → release
+  - market signal → Scout/PIRATE/THREAD → build decision → product
+  - release → commerce → telemetry → Harbor Master → revised decision
