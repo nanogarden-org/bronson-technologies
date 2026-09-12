@@ -1,0 +1,24 @@
+{
+  "schema": "bronson-technologies-site/v1",
+  "title": "Bronson Technologies",
+  "strapline": "Inspectable architectures for systems that must observe, reason, preserve continuity, and act within explicit authority.",
+  "base_path": "/bronson-technologies",
+  "repository_url": "https://github.com/nanogarden-org/bronson-technologies",
+  "navigation": [
+    {"label": "Architecture", "path": "/architecture/", "order": 10},
+    {"label": "Free", "path": "/free/", "order": 20},
+    {"label": "Licensed", "path": "/licensed/", "order": 30},
+    {"label": "Developer", "path": "/developer/", "order": 40}
+  ],
+  "maturity_vocabulary": [
+    "concept",
+    "prototype",
+    "implemented toolkit",
+    "tested demo",
+    "deployed pilot",
+    "production system",
+    "historical evidence",
+    "living index"
+  ],
+  "availability_vocabulary": ["free", "licensed", "reference", "planned", "not offered"]
+}

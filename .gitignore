@@ -23,3 +23,5 @@ Thumbs.db
 *.tmp
 *.bak
 ~$*
+# Generated GitHub Pages artifact. Build with scripts/build_site.py.
+site/

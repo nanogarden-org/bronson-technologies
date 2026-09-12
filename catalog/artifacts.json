@@ -1,0 +1,199 @@
+{
+  "schema": "bronson-technologies-artifacts/v1",
+  "last_reviewed": "2026-09-12",
+  "artifacts": [
+    {
+      "id": "bronson-technologies",
+      "title": "Bronson Technologies",
+      "summary": "Public architecture root, evidence registry, and human/machine-readable publication interface.",
+      "kind": "architecture root",
+      "planes": ["continuity", "release"],
+      "maturity": "implemented toolkit",
+      "availability": {"class": "reference", "public": true, "license": "no general reuse license", "route": "https://github.com/nanogarden-org/bronson-technologies"},
+      "evidence": [{"type": "repository", "label": "Canonical repository", "url": "https://github.com/nanogarden-org/bronson-technologies", "verification": "Inspect version history, proof records, and generated-site sources."}],
+      "relations": ["evidence-index", "proof-map"]
+    },
+    {
+      "id": "turtleml",
+      "title": "TurtleML",
+      "summary": "Local-first heterogeneous AI/ML node architecture with bounded authority and observable state.",
+      "kind": "system architecture",
+      "planes": ["continuity", "embodiment"],
+      "maturity": "prototype",
+      "availability": {"class": "reference", "public": true, "license": "repository-specific", "route": "https://github.com/nanogarden-org/TurtleML"},
+      "evidence": [{"type": "repository", "label": "TurtleML repository", "url": "https://github.com/nanogarden-org/TurtleML", "verification": "Inspect repository documentation and implementation history."}],
+      "relations": ["abci", "lca-mvp", "sarah"]
+    },
+    {
+      "id": "abci",
+      "title": "ABCI",
+      "summary": "Hardware-agnostic interface and trust layer for typed, time-bounded physiological and neurological state claims.",
+      "kind": "protocol architecture",
+      "planes": ["observation", "continuity", "embodiment"],
+      "maturity": "tested demo",
+      "availability": {"class": "reference", "public": true, "license": "no general reuse license", "route": "https://github.com/nanogarden-org/bronson-technologies/tree/main/platforms/abci"},
+      "evidence": [
+        {"type": "source", "label": "ABCI research preview", "path": "platforms/abci/README.md", "verification": "Review safety boundaries and architecture documentation."},
+        {"type": "test", "label": "Simulated emitter tests", "path": "platforms/abci/tests/test_simulated_abci_emit.py", "verification": "Run with Python 3.11 or newer."}
+      ],
+      "relations": ["turtleml", "lca-mvp"]
+    },
+    {
+      "id": "lca-mvp",
+      "title": "LCA-MVP",
+      "summary": "Continuity architecture using stable identities, provenance, authority boundaries, privacy, and cross-language verification.",
+      "kind": "reference implementation",
+      "planes": ["continuity"],
+      "maturity": "prototype",
+      "availability": {"class": "reference", "public": true, "license": "repository-specific", "route": "https://github.com/nanogarden-org/LCA-MVP"},
+      "evidence": [{"type": "repository", "label": "LCA-MVP repository", "url": "https://github.com/nanogarden-org/LCA-MVP", "verification": "Inspect Python/Rust implementation and verification records."}],
+      "relations": ["traveler-provenance", "archive-core"]
+    },
+    {
+      "id": "bobw",
+      "title": "B.o.B.W. Intake Customs",
+      "summary": "Human- and machine-readable intake boundary preserving source identity, rights, context, and route state.",
+      "kind": "workflow architecture",
+      "planes": ["observation", "continuity"],
+      "maturity": "implemented toolkit",
+      "availability": {"class": "reference", "public": true, "license": "repository-specific", "route": "https://github.com/nanogarden-org/BOBW"},
+      "evidence": [{"type": "repository", "label": "B.o.B.W. repository", "url": "https://github.com/nanogarden-org/BOBW", "verification": "Inspect intake, traveler-provenance, rights, and traceability records."}],
+      "relations": ["traveler-provenance", "content-factory"]
+    },
+    {
+      "id": "traveler-provenance",
+      "title": "Traveler-Provenance",
+      "summary": "A lineage spine carrying source identity, rights and review state, transformations, version, routing, and release history.",
+      "kind": "provenance method",
+      "planes": ["continuity"],
+      "maturity": "implemented toolkit",
+      "availability": {"class": "reference", "public": true, "license": "no general reuse license", "route": "https://github.com/nanogarden-org/bronson-technologies/blob/main/portfolio/docs/architecture-map.md"},
+      "evidence": [{"type": "method record", "label": "Architecture map", "path": "portfolio/docs/architecture-map.md", "verification": "Inspect the provenance spine and invariant."}],
+      "relations": ["bobw", "content-factory", "archive-core"]
+    },
+    {
+      "id": "scout-pirate-thread",
+      "title": "SCOUT → PIRATE → THREAD",
+      "summary": "Discovery system for sensing repeated friction, mapping incentives and authority, tracing trajectories, and gating build decisions.",
+      "kind": "decision workflow",
+      "planes": ["observation", "interpretation"],
+      "maturity": "implemented toolkit",
+      "availability": {"class": "planned", "public": true, "license": "offering terms pending", "route": "/free/"},
+      "evidence": [{"type": "method record", "label": "Methodology walkthrough", "path": "portfolio/methodology.html", "verification": "Review the public method description; downloadable packaging remains pending."}],
+      "relations": ["content-factory", "harbor-master"]
+    },
+    {
+      "id": "content-factory",
+      "title": "Content Factory / NanoGarden",
+      "summary": "Selection-driven production ecology for converting governed source material into coherent, reusable outputs.",
+      "kind": "production architecture",
+      "planes": ["production"],
+      "maturity": "implemented toolkit",
+      "availability": {"class": "planned", "public": true, "license": "offering terms pending", "route": "/licensed/"},
+      "evidence": [{"type": "architecture description", "label": "Methodology walkthrough", "path": "portfolio/methodology.html", "verification": "Review the documented production chain and linked public outputs."}],
+      "relations": ["bobw", "traveler-provenance", "shipping-dock"]
+    },
+    {
+      "id": "shipping-dock",
+      "title": "Shipping Dock",
+      "summary": "Release discipline for metadata validation, QA, packaging, versioning, placement, and approved handoff.",
+      "kind": "release architecture",
+      "planes": ["release"],
+      "maturity": "implemented toolkit",
+      "availability": {"class": "planned", "public": true, "license": "offering terms pending", "route": "/licensed/"},
+      "evidence": [{"type": "architecture description", "label": "Operating architecture", "path": "portfolio/docs/architecture-map.md", "verification": "Inspect the release position in the operating architecture."}],
+      "relations": ["content-factory", "commerce-agent"]
+    },
+    {
+      "id": "commerce-agent",
+      "title": "Commerce Agent",
+      "summary": "Boundary for executing approved offers, placements, transactions, and acquisition routes.",
+      "kind": "commerce architecture",
+      "planes": ["commerce"],
+      "maturity": "concept",
+      "availability": {"class": "not offered", "public": true, "license": "not applicable", "route": "/licensed/"},
+      "evidence": [{"type": "architecture description", "label": "Operating architecture", "path": "portfolio/docs/architecture-map.md", "verification": "Review the published architecture; no public implementation is claimed."}],
+      "relations": ["shipping-dock", "harbor-master"]
+    },
+    {
+      "id": "harbor-master",
+      "title": "Harbor Master",
+      "summary": "Feedback layer reconciling traffic, placement, payment, support, and user evidence into revised decisions.",
+      "kind": "feedback architecture",
+      "planes": ["feedback"],
+      "maturity": "concept",
+      "availability": {"class": "not offered", "public": true, "license": "not applicable", "route": "/architecture/"},
+      "evidence": [{"type": "architecture description", "label": "Operating architecture", "path": "portfolio/docs/architecture-map.md", "verification": "Review the published architecture; no public implementation is claimed."}],
+      "relations": ["commerce-agent", "scout-pirate-thread"]
+    },
+    {
+      "id": "phonic-drive",
+      "title": "Phonic-Drive",
+      "summary": "Audio analysis and evolving acoustic-volume visualization for correlating sound geometry with response markers.",
+      "kind": "analysis tool",
+      "planes": ["observation", "interpretation"],
+      "maturity": "prototype",
+      "availability": {"class": "reference", "public": true, "license": "repository-specific", "route": "https://github.com/nanogarden-org/phonic-drive-analyzer"},
+      "evidence": [{"type": "repository", "label": "Phonic-Drive Analyzer", "url": "https://github.com/nanogarden-org/phonic-drive-analyzer", "verification": "Inspect analyzer code, versions, and examples."}],
+      "relations": ["scout-pirate-thread"]
+    },
+    {
+      "id": "sarah",
+      "title": "S.A.R.A.H.",
+      "summary": "Local-first habitat supervisory AI concept with bounded authority, privacy, coordination, and fallback behavior.",
+      "kind": "embodied architecture",
+      "planes": ["embodiment", "continuity"],
+      "maturity": "concept",
+      "availability": {"class": "not offered", "public": true, "license": "not applicable", "route": "/architecture/"},
+      "evidence": [{"type": "portfolio record", "label": "Existing project registry", "path": "portfolio/projects.html", "verification": "Review the concept label; no implementation claim is made."}],
+      "relations": ["turtleml", "abci"]
+    },
+    {
+      "id": "archive-core",
+      "title": "Archive.Core.Object",
+      "summary": "Meta-record archival object designed to remain identifiable, verifiable, reconstructable, and lineage-resolvable across storage locations.",
+      "kind": "archive architecture",
+      "planes": ["continuity"],
+      "maturity": "prototype",
+      "availability": {"class": "planned", "public": true, "license": "offering terms pending", "route": "/architecture/"},
+      "evidence": [{"type": "related implementation", "label": "Public architecture listing", "path": "portfolio/projects.html", "verification": "Public package and dedicated evidence path are pending."}],
+      "relations": ["traveler-provenance", "lca-mvp"]
+    },
+    {
+      "id": "proof-map",
+      "title": "Canonical Proof Map",
+      "summary": "Machine-readable record connecting identity, credentials, projects, methods, and evidence paths.",
+      "kind": "evidence record",
+      "planes": ["continuity"],
+      "maturity": "living index",
+      "availability": {"class": "free", "public": true, "license": "reference access; no general reuse license", "route": "https://github.com/nanogarden-org/bronson-technologies/blob/main/portfolio/proof-map.yaml"},
+      "evidence": [{"type": "canonical record", "label": "proof-map.yaml", "path": "portfolio/proof-map.yaml", "verification": "Compare machine mirrors against the canonical YAML record."}],
+      "relations": ["evidence-index", "developer-record"]
+    },
+    {
+      "id": "evidence-index",
+      "title": "Evidence Index",
+      "summary": "Claim-to-artifact register separating evidence type, maturity, verification, limitations, and publication status.",
+      "kind": "evidence record",
+      "planes": ["continuity", "feedback"],
+      "maturity": "living index",
+      "availability": {"class": "free", "public": true, "license": "reference access; no general reuse license", "route": "https://github.com/nanogarden-org/bronson-technologies/blob/main/evidence-index.md"},
+      "evidence": [{"type": "canonical record", "label": "Evidence index", "path": "evidence-index.md", "verification": "Inspect claims, limitations, and verification routes directly."}],
+      "relations": ["proof-map", "developer-record"]
+    },
+    {
+      "id": "developer-record",
+      "title": "Developer Profile & Credentials",
+      "summary": "Professional profile, capability map, timeline, credentials, and dated third-party credibility records for Robin Abigayle Bronson.",
+      "kind": "developer record",
+      "planes": ["continuity"],
+      "maturity": "living index",
+      "availability": {"class": "reference", "public": true, "license": "personal record; no reuse grant", "route": "/developer/"},
+      "evidence": [
+        {"type": "profile", "label": "Canonical profile directory", "path": "profile/", "verification": "Inspect source records without treating drafts as approved claims."},
+        {"type": "credentials", "label": "Canonical credential index", "path": "credentials.html", "verification": "Follow issuer validators and stated limitations."}
+      ],
+      "relations": ["proof-map", "evidence-index"]
+    }
+  ]
+}

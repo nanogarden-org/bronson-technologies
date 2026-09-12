@@ -1,0 +1,22 @@
+{
+  "schema": "bronson-technologies-ontology/v1",
+  "invariant": "Transformation may change form, but it must not erase lineage.",
+  "planes": [
+    {"id": "observation", "title": "Observation", "purpose": "Acquire signals without silently promoting them into claims.", "order": 10},
+    {"id": "interpretation", "title": "Interpretation", "purpose": "Map patterns, incentives, boundaries, and causal trajectories.", "order": 20},
+    {"id": "continuity", "title": "Continuity", "purpose": "Preserve identity, provenance, rights, state, and transformation history.", "order": 30},
+    {"id": "production", "title": "Production", "purpose": "Transform approved material into bounded, reviewable artifacts.", "order": 40},
+    {"id": "release", "title": "Release", "purpose": "Verify, package, version, and route approved public objects.", "order": 50},
+    {"id": "commerce", "title": "Commerce", "purpose": "Execute explicit acquisition and licensing boundaries.", "order": 60},
+    {"id": "feedback", "title": "Feedback", "purpose": "Reconcile real-world evidence into revised models and decisions.", "order": 70},
+    {"id": "embodiment", "title": "Embodiment", "purpose": "Bind sensing and action to local, physical, and authority-limited systems.", "order": 80}
+  ],
+  "spine": [
+    "bobw",
+    "traveler-provenance",
+    "content-factory",
+    "shipping-dock",
+    "commerce-agent",
+    "harbor-master"
+  ]
+}

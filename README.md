@@ -1,10 +1,31 @@
 # Bronson Technologies
 
-Bronson Technologies is a public-facing portfolio and research index for applied AI systems, workflow design, knowledge provenance, and early platform experiments.
+Bronson Technologies is the public architecture root for inspectable AI systems, workflow design, knowledge provenance, bounded automation, and early platform experiments. The developer portfolio remains available as evidence, but it is no longer the repository's organizing identity.
+
+## Architecture-first website
+
+GitHub Pages is built as a disposable projection of repository authority:
+
+- `catalog/site.json` defines site identity, routes, and navigation;
+- `catalog/ontology.json` defines the architecture planes and provenance spine;
+- `catalog/artifacts.json` is the publication registry, requiring maturity, availability, and evidence metadata for every public artifact;
+- `scripts/validate_catalog.py` blocks incomplete or invalid publication records;
+- `scripts/build_site.py` generates `site/`; and
+- `.github/workflows/pages.yml` validates, tests, builds, and deploys the Pages artifact from `main`.
+
+The public entry points are `/architecture/`, `/free/`, `/licensed/`, and `/developer/`. Existing profile, credential, portfolio, and proof files remain canonical in their current repository locations. The prior portfolio is projected under `/legacy/`; credentials are projected under `/developer/credentials/` with a compatibility redirect from the earlier public path.
+
+Build and verify locally with Python 3.11+:
+
+```text
+python scripts/validate_catalog.py
+python scripts/build_site.py
+python -m unittest discover -s tests -v
+```
 
 ## Searchable proof portfolio
 
-Start with [`portfolio/index.html`](portfolio/index.html) for the human-readable walkthrough connecting Robert Bronson / Robin A. Bronson's credentials, projects, methodologies, third-party credibility, and public implementation evidence.
+Start with the generated architecture registry for the architecture-first interface. The preserved [`portfolio/index.html`](portfolio/index.html) remains the human-readable proof walkthrough connecting identity, credentials, projects, methodologies, third-party credibility, and public implementation evidence.
 
 Machine-readable proof entry points are available as [`portfolio/proof-map.yaml`](portfolio/proof-map.yaml), [`portfolio/proof-map.json`](portfolio/proof-map.json), [`portfolio/data/search-index.json`](portfolio/data/search-index.json), and [`portfolio/llms.txt`](portfolio/llms.txt).
 
