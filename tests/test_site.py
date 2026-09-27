@@ -22,6 +22,15 @@ class GeneratedSiteTests(unittest.TestCase):
         for route in ("architecture", "free", "licensed", "developer"):
             self.assertTrue((ROOT / "site" / route / "index.html").is_file(), route)
 
+    def test_interest_test_offer_pages_are_projected(self) -> None:
+        for filename in (
+            "ai-workflow-boundary-checklist.html",
+            "simplified-evidence-interpretation-action-model.html",
+            "best-workflow-tips-for-non-standard-situations.html",
+            "verify-ai-outputs-before-you-send.html",
+        ):
+            self.assertTrue((ROOT / "site" / "offers" / filename).is_file(), filename)
+
     def test_every_artifact_has_a_detail_page(self) -> None:
         for item in self.registry["artifacts"]:
             page = ROOT / "site" / "architecture" / item["id"] / "index.html"

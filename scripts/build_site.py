@@ -113,11 +113,28 @@ def build() -> None:
     def offering_page(kind: str, title: str, lead: str) -> None:
         members = [item for item in artifacts if item["availability"]["class"] == kind]
         cards = "".join(artifact_card(item, config) for item in members)
-        body = f"""<section class="page-hero shell"><p class="eyebrow">OFFERING BOUNDARY</p><h1>{esc(title)}</h1><p class="lead">{esc(lead)}</p></section><section class="shell"><div class="card-grid">{cards or '<div class="empty"><h2>Release gate not yet passed.</h2><p>No artifact is represented as available in this class until its metadata, evidence, rights, and acquisition route are approved.</p></div>'}</div></section>"""
+        offer_links = ""
+        if kind == "free":
+            offers = [
+                ("AI Workflow Boundary Checklist", "offers/ai-workflow-boundary-checklist.html", "Review the seam between evidence, authority, and external action."),
+                ("Simplified Evidence → Action Model", "offers/simplified-evidence-interpretation-action-model.html", "A starter lens for keeping five workflow questions separate."),
+                ("Best Workflow Tips for Non-Standard Situations", "offers/best-workflow-tips-for-non-standard-situations.html", "Short patterns for ambiguous, exceptional, and escalation-heavy cases."),
+                ("Verify Your AI Outputs Before You Send", "offers/verify-ai-outputs-before-you-send.html", "A pre-send review aid for outputs that may leave the workspace or trigger consequences."),
+            ]
+            offer_cards = "".join(
+                f'<article class="artifact-card"><p class="kind">INTEREST TEST / OFFER PAGE</p><h3><a href="{esc(base)}/{esc(path)}">{esc(label)}</a></h3><p>{esc(summary)}</p><a class="text-link" href="{esc(base)}/{esc(path)}">Inspect offer page <span aria-hidden="true">→</span></a></article>'
+                for label, path, summary in offers
+            )
+            offer_links = f'<section class="shell"><div class="section-heading"><div><p class="eyebrow">PRACTICAL OFFERS</p><h2>Interest-test pages</h2></div><p>These pages measure qualified interest; the underlying checklists are not distributed here.</p></div><div class="card-grid">{offer_cards}</div></section>'
+        body = f"""<section class="page-hero shell"><p class="eyebrow">OFFERING BOUNDARY</p><h1>{esc(title)}</h1><p class="lead">{esc(lead)}</p></section><section class="shell"><div class="card-grid">{cards or '<div class="empty"><h2>Release gate not yet passed.</h2><p>No artifact is represented as available in this class until its metadata, evidence, rights, and acquisition route are approved.</p></div>'}</div></section>{offer_links}"""
         write(f"/{kind}/", render_page(config, title, "Offering boundary", body, lead))
 
     offering_page("free", "Free resources", "Complete small resources and public records that can stand on their own. Availability is declared in metadata, not implied by visibility.")
     offering_page("licensed", "Licensed systems", "Implementation depth, automation, and commercial-use packages. Nothing appears here before its terms and acquisition route are explicit.")
+
+    offers_source = ROOT / "offers"
+    if offers_source.is_dir():
+        shutil.copytree(offers_source, OUTPUT / "offers")
 
     developer = by_id["developer-record"]
     developer_body = f"""<section class="page-hero shell"><p class="eyebrow">DEVELOPER BRANCH</p><h1>Robin Abigayle Bronson</h1><p class="lead">AI Systems Architect, systems thinker, and developer of the architectures indexed here. The person is an accountable branch of the system—not the organizing frame for every artifact.</p></section><section class="shell detail-grid"><article><p class="eyebrow">CANONICAL RECORDS</p><h2>Profile and credentials remain in place.</h2><div class="link-stack"><a href="{esc(config['repository_url'])}/tree/main/profile">Profile source records <span>→</span></a><a href="{esc(base)}/developer/credentials/">Credential index <span>→</span></a><a href="{esc(config['repository_url'])}/blob/main/evidence-index.md">Evidence index <span>→</span></a><a href="{esc(base)}/legacy/profile.html">Legacy portfolio profile <span>→</span></a><a href="{esc(base)}/legacy/credentials.html">Legacy portfolio credentials <span>→</span></a></div></article><aside><p class="eyebrow">RECORD STATUS</p>{badge('Maturity', developer['maturity'], 'maturity')}{badge('Availability', developer['availability']['class'], 'availability')}<p>The existing canonical files were not deleted, renamed, or rewritten. They are now reached through this developer entry point.</p></aside></section>"""
