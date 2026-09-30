@@ -31,6 +31,12 @@ class GeneratedSiteTests(unittest.TestCase):
         ):
             self.assertTrue((ROOT / "site" / "offers" / filename).is_file(), filename)
 
+    def test_free_field_note_is_projected_and_downloadable(self) -> None:
+        self.assertTrue((ROOT / "site" / "free" / "protocol-independent-human-ai-operating-layer.html").is_file())
+        self.assertTrue((ROOT / "site" / "free" / "protocol-independent-human-ai-operating-layer.md").is_file())
+        page = (ROOT / "site" / "free" / "index.html").read_text(encoding="utf-8")
+        self.assertIn("protocol-independent-human-ai-operating-layer.html", page)
+
     def test_every_artifact_has_a_detail_page(self) -> None:
         for item in self.registry["artifacts"]:
             page = ROOT / "site" / "architecture" / item["id"] / "index.html"

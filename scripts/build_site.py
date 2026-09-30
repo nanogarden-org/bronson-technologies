@@ -126,11 +126,25 @@ def build() -> None:
                 for label, path, summary in offers
             )
             offer_links = f'<section class="shell"><div class="section-heading"><div><p class="eyebrow">PRACTICAL OFFERS</p><h2>Interest-test pages</h2></div><p>These pages measure qualified interest; the underlying checklists are not distributed here.</p></div><div class="card-grid">{offer_cards}</div></section>'
+            free_resources = [
+                ("Protocol-Independent Human–AI Operating Layer", "free/protocol-independent-human-ai-operating-layer.html", "A field note and downloadable review prompt for workflows that must survive model and vendor changes."),
+            ]
+            resource_cards = "".join(
+                f'<article class="artifact-card"><p class="kind">FREE FIELD NOTE / DOWNLOAD</p><h3><a href="{esc(base)}/{esc(path)}">{esc(label)}</a></h3><p>{esc(summary)}</p><a class="text-link" href="{esc(base)}/{esc(path)}">Read and download <span aria-hidden="true">→</span></a></article>'
+                for label, path, summary in free_resources
+            )
+            offer_links += f'<section class="shell"><div class="section-heading"><div><p class="eyebrow">FREE FIELD NOTES</p><h2>Downloadable resources</h2></div><p>Small educational resources with explicit boundaries and inspectable source content.</p></div><div class="card-grid">{resource_cards}</div></section>'
         body = f"""<section class="page-hero shell"><p class="eyebrow">OFFERING BOUNDARY</p><h1>{esc(title)}</h1><p class="lead">{esc(lead)}</p></section><section class="shell"><div class="card-grid">{cards or '<div class="empty"><h2>Release gate not yet passed.</h2><p>No artifact is represented as available in this class until its metadata, evidence, rights, and acquisition route are approved.</p></div>'}</div></section>{offer_links}"""
         write(f"/{kind}/", render_page(config, title, "Offering boundary", body, lead))
 
     offering_page("free", "Free resources", "Complete small resources and public records that can stand on their own. Availability is declared in metadata, not implied by visibility.")
     offering_page("licensed", "Licensed systems", "Implementation depth, automation, and commercial-use packages. Nothing appears here before its terms and acquisition route are explicit.")
+
+    free_source = ROOT / "free"
+    if free_source.is_dir():
+        for source in free_source.iterdir():
+            if source.is_file():
+                shutil.copy2(source, OUTPUT / "free" / source.name)
 
     offers_source = ROOT / "offers"
     if offers_source.is_dir():
