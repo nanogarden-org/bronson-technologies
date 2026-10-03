@@ -2,6 +2,27 @@
 
 Bronson Technologies is the public architecture root for inspectable AI systems, workflow design, knowledge provenance, bounded automation, and early platform experiments. The developer portfolio remains available as evidence, but it is no longer the repository's organizing identity.
 
+## 90-second reviewer path
+
+If you are evaluating the work rather than browsing the whole research graph, start here:
+
+| Capability | Problem addressed | Public proof |
+| --- | --- | --- |
+| Provenance-aware AI ingestion | Transformations can erase origin, custody, and source context | [B.o.B.W.](https://github.com/nanogarden-org/BOBW) — paired human/machine records, hashes, event stream, verified staging |
+| Bounded distributed AI | Knowledge and inference are often conflated with permission to act | [TurtleML](https://github.com/nanogarden-org/TurtleML) — executable authority/provenance contracts and invariant tests |
+| Governed continuity | Long-lived AI/memory systems can blur source, identity, custody, attribution, and authority | [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP) — runnable foundation plus Python/Rust conformance evidence |
+| Workflow formalization | Useful one-off reasoning is often lost instead of becoming reusable capability | [Portfolio methodology](portfolio/methodology.html) and the proof graph below |
+
+The recurring design pattern is: **make the claim inspectable, make the boundary explicit, make the smallest useful implementation runnable, and preserve enough provenance for another person to challenge the result.**
+
+## Public challenge surface
+
+These repositories are intentionally published early enough to be inspected, tested, criticized, forked, and broken. A public artifact is not a claim of finality or exclusive ownership of an abstract idea. It is a dated, inspectable record of a particular formulation, implementation, and maturity state.
+
+If an invariant fails, an edge case is missing, a term maps poorly to established practice, or a simpler architecture works better, open an issue or point to the counterexample. The useful outcome is a stronger model, not protection from criticism.
+
+See [Public Provenance and Challenge Protocol](docs/public-provenance-and-challenge.md) for the publication boundary and chronology practice.
+
 ## Architecture-first website
 
 GitHub Pages is built as a disposable projection of repository authority:
@@ -64,12 +85,15 @@ The check should produce a typed, time-bounded state claim marked as simulated, 
 - `papers/` — public papers, abstracts, and publication metadata.
 - `demos/` — runnable or inspectable demonstrations using synthetic or approved data.
 - `evidence-index.md` — central map connecting claims to reviewable evidence.
+- `docs/public-provenance-and-challenge.md` — how public chronology, maturity, related work, and challengeability are recorded.
 
 ## Evidence standard
 
 Each public claim should identify its evidence, maturity level, limitations, and verification method. Appropriate maturity labels include `concept`, `prototype`, `implemented toolkit`, `tested demo`, `deployed pilot`, and `production system`.
 
 The proof portfolio additionally separates historical third-party credibility, institutional credentials, active-development architecture, and inspectable implementation evidence rather than treating them as interchangeable forms of proof.
+
+A commit timestamp establishes repository chronology for that artifact; it does **not** by itself establish novelty, patent rights, independent invention by others, or that no earlier related work exists. Where priority or novelty matters, preserve the dated artifact and also document known related work and the specific delta being claimed.
 
 ## Authorship and publication boundary
 
