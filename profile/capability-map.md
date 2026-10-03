@@ -1,9 +1,17 @@
-﻿# Capability Map
+# Capability Map
+
+This page is the fast translation layer between the broader architecture portfolio and concrete public evidence. Maturity describes the artifact named here, not every related idea or private implementation.
 
 | Capability | What it means in practice | Supporting evidence | Maturity |
 |---|---|---|---|
-| AI systems design | Model stages, controls, approval gates, provenance, and reviewable outputs | _Add link_ | _Add label_ |
-| Workflow automation | Build reliable handoffs, reusable templates, and quality checks | _Add link_ | _Add label_ |
-| Knowledge provenance | Separate sources, claims, inferences, decisions, and final outputs | _Add link_ | _Add label_ |
-| Offline AI | Design privacy-aware local or disconnected workflows | _Add link_ | _Add label_ |
-| Creative publishing | Coordinate structured production from source through finished artifact | _Add link_ | _Add label_ |
+| AI systems design | Model stages, controls, approval gates, provenance, authority boundaries, and reviewable outputs | [TurtleML](https://github.com/nanogarden-org/TurtleML), [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP), [ABCI research preview](../platforms/abci/) | Executable alpha / research architecture |
+| Workflow automation | Convert repeatable handoffs into explicit contracts, checks, routing, and reusable tooling | [B.o.B.W.](https://github.com/nanogarden-org/BOBW), [Portfolio methodology](../portfolio/methodology.html) | Tested local reference implementation + documented methodology |
+| Knowledge provenance | Keep source identity, transformations, claims, interpretations, and authorization boundaries distinguishable | [B.o.B.W.](https://github.com/nanogarden-org/BOBW), [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP), [Evidence index](../evidence-index.md) | Implemented/tested components plus active architecture |
+| Offline / local-first AI | Design systems that can preserve useful operation and authority boundaries without making cloud access the architectural dependency | [TurtleML](https://github.com/nanogarden-org/TurtleML), [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP) | Executable alpha / local reference foundation |
+| Creative and knowledge production | Coordinate source intake, provenance, structured transformation, review, and release across a reusable production workflow | [B.o.B.W.](https://github.com/nanogarden-org/BOBW), [Projects](../portfolio/projects.html), [Methodology](../portfolio/methodology.html) | Mixed: tested ingestion component + active-development workflow |
+| Cross-language conformance | Express architectural semantics so different implementations can be checked against the same decision and integrity behavior | [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP) | Runnable foundation with Python/Rust conformance evidence |
+| Capability extraction | Turn solved problems and recurring reasoning into explicit, reusable methods rather than one-off answers | [Methodology](../portfolio/methodology.html), [Proof map](../portfolio/proof-map.yaml) | Documented methodology / active refinement |
+
+## Reading rule
+
+Use the linked repository or artifact as the authority for its current status. This map intentionally avoids upgrading a prototype into a production claim simply because the underlying architecture is broader.
