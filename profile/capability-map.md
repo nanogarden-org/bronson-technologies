@@ -15,3 +15,11 @@ This page is the fast translation layer between the broader architecture portfol
 ## Reading rule
 
 Use the linked repository or artifact as the authority for its current status. This map intentionally avoids upgrading a prototype into a production claim simply because the underlying architecture is broader.
+
+## Direct verification paths
+
+- [BOBW validation and limitations](https://github.com/nanogarden-org/BOBW/blob/main/docs/validation.md).
+- [TurtleML authority tests](https://github.com/nanogarden-org/TurtleML/blob/main/tests/test_authority.py) and [demo](https://github.com/nanogarden-org/TurtleML/blob/main/examples/pump_demo.py).
+- [LCA 001a conformance scope and commands](https://github.com/nanogarden-org/LCA-MVP/blob/main/conformance/README.md); MVP 002 remains proposed architecture.
+
+See the [documentation process](../docs/hiring-review-process.md) for contribution, scope, and evidence requirements.
