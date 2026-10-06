@@ -1,6 +1,6 @@
 # Capability Map
 
-This page is the fast translation layer between the broader architecture portfolio and concrete public evidence. Maturity describes the artifact named here, not every related idea or private implementation.
+Selected capabilities, supporting projects, and current implementation status.
 
 | Capability | What it means in practice | Supporting evidence | Maturity |
 |---|---|---|---|
