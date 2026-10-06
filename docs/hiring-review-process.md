@@ -1,4 +1,4 @@
-# Hiring reviewer documentation process
+# Project documentation standard
 
 ## Purpose
 
@@ -21,11 +21,11 @@ Make a project understandable to a hiring reviewer within one minute, then provi
 | Question | Required content |
 | --- | --- |
 | Business problem | Concrete operational failure and affected workflow |
-| Author contribution | Specific design and implementation work |
+| What I built | Specific design and implementation work |
 | Working today | Version and implemented slice |
 | Evidence | Demo, tests, commands, validation record |
 | Limits | Unimplemented scope and unproven guarantees |
-| Relevant assignments | Work this evidence equips the author to perform |
+| Applications | Work this evidence equips the author to perform |
 
 ## Chronology and provenance
 
@@ -35,6 +35,7 @@ Git dates identify versions and recorded history. First public availability requ
 
 A reviewer can explain the business problem and contribution without learning project-specific terminology; reach verification in one click from the summary; distinguish working code from plans; and submit a precise challenge. Portfolio records agree on project identity, links, maturity, and review date.
 
-## Initial application — 2026-10-06
 
-Applied to Bronson Technologies, BOBW, TurtleML, and LCA-MVP on their existing documentation PR branches. BOBW demonstrates local intake and staging; TurtleML demonstrates a limited policy/grant slice; LCA demonstrates the 001a foundation and narrow conformance boundary. Broader architecture remains explicitly labeled. This entry records documentation work, not a new runtime validation checkpoint.
+## Editorial standard
+
+Describe the project, explain the engineering decisions, and link the evidence. Use plain project headings such as Overview, What I built, Verification, Limits, and Applications. Keep task logs, conversation history, and descriptions of the documentation exercise out of project pages. Record validation by version, date when available, environment, and result. Preserve uncertainty without repeating disclaimers. Write PR descriptions around the final change and actual checks.
