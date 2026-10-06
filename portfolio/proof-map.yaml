@@ -1,5 +1,5 @@
 schema: bronson-technologies-proof-map/v1
-last_reviewed: '2026-10-02'
+last_reviewed: '2026-10-06'
 identity:
   professional_name: Robert Bronson
   publishing_name: Robin A. Bronson
@@ -10,9 +10,10 @@ identity:
   github_root: https://github.com/nanogarden-org/bronson-technologies
 publication_practice:
   purpose: Publish inspectable architecture hypotheses, runnable reference implementations, and dated evidence early enough for external challenge and refinement.
-  chronology_boundary: Commit and release history document when a repository artifact was public; chronology alone does not establish universal novelty, patent rights, or absence of earlier related work.
+  chronology_boundary: Git history identifies versions and recorded dates; public availability requires a separate publication or archival anchor, and neither proves universal novelty or derivation.
   challenge_path: Test the implementation, challenge invariants, report edge cases, compare related work, and preserve corrections in subsequent history.
-  protocol: docs/public-provenance-and-challenge.md
+  protocol: ../docs/public-provenance-and-challenge.md
+  reviewer_process: ../docs/hiring-review-process.md
 credentials:
   - issuer: OpenAI Academy
     name: AI Foundations
