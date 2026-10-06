@@ -18,7 +18,7 @@ For architecture claims that matter, prefer to publish as many of these as the m
 6. **Known limits** — what is intentionally absent or unproven.
 7. **Related work** — established terminology, standards, projects, or prior approaches known at the time.
 8. **Delta statement** — what is specifically different about this treatment without claiming ownership of the whole problem space.
-9. **Chronology anchor** — commit, tag, or release history showing when this artifact entered the public repository.
+9. **Chronology anchor** — version SHA plus a separately recorded publication or archival anchor for any public-availability claim.
 10. **Challenge invitation** — how another person can report a broken invariant, counterexample, missing edge case, or better mapping.
 
 ## Challenge rule
@@ -39,7 +39,7 @@ Corrections should be additive and traceable where practical. Do not silently re
 
 ## Chronology is evidence, not exclusivity
 
-Git commits, tags, releases, hashes, and archived artifacts are useful evidence that a particular public artifact existed at a particular time.
+Git history identifies artifact versions and recorded dates. Commit dates and retained snapshots alone do not establish when an artifact became publicly accessible. Public-availability claims require a separately recorded publication or archival anchor. This packet does not establish a verified first-publication date. Neither repository chronology nor publication evidence establishes universal novelty, exclusive ownership of abstract ideas, or derivation by later work.
 
 They do not, by themselves, prove:
 
@@ -49,7 +49,7 @@ They do not, by themselves, prove:
 - that another party later encountered or copied the work; or
 - that a prototype was production-ready.
 
-When those distinctions matter, say exactly what the evidence supports: **this formulation and artifact were publicly documented here by this date**.
+When those distinctions matter, say exactly what the evidence supports: **this version is identified by this commit; public availability is supported only by the separately linked publication record**.
 
 ## Provenance rule
 
@@ -82,3 +82,7 @@ It is:
 > Can this invariant survive another implementation?
 >
 > What else can this architecture be used to solve?
+
+## Challenge submission packet
+
+Include repository/version or commit SHA, invariant challenged, minimal synthetic input, commands or reasoning steps, expected versus observed behavior, and a related-work link where applicable. Identify implemented behavior versus proposed architecture. Open an issue in the affected repository and exclude private or unlicensed source material.
