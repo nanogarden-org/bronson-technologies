@@ -2,16 +2,22 @@
 
 Bronson Technologies is the public architecture root for inspectable AI systems, workflow design, knowledge provenance, bounded automation, and early platform experiments. The developer portfolio remains available as evidence, but it is no longer the repository's organizing identity.
 
+## Work I can help an organization deliver
+
+I design AI and automation workflows around the points where information, responsibility, and permission cross between systems. My public projects demonstrate traceable intake, bounded action, and governed knowledge continuity through small, inspectable implementations.
+
+My contribution spans problem framing, architecture, workflow contracts, and reference implementations. Repository histories and project evidence make those contributions reviewable; proposed business applications are not claims of measured client savings.
+
 ## 90-second reviewer path
 
 If you are evaluating the work rather than browsing the whole research graph, start here:
 
 | Capability | Problem addressed | Public proof |
 | --- | --- | --- |
-| Provenance-aware AI ingestion | Transformations can erase origin, custody, and source context | [B.o.B.W.](https://github.com/nanogarden-org/BOBW) — paired human/machine records, hashes, event stream, verified staging |
-| Bounded distributed AI | Knowledge and inference are often conflated with permission to act | [TurtleML](https://github.com/nanogarden-org/TurtleML) — executable authority/provenance contracts and invariant tests |
-| Governed continuity | Long-lived AI/memory systems can blur source, identity, custody, attribution, and authority | [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP) — runnable foundation plus Python/Rust conformance evidence |
-| Workflow formalization | Useful one-off reasoning is often lost instead of becoming reusable capability | [Portfolio methodology](portfolio/methodology.html) and the proof graph below |
+| Provenance-aware AI ingestion | Transformations can erase origin, custody, and source context | [B.o.B.W.](https://github.com/nanogarden-org/BOBW) — tested local reference implementation; [validation and limits](https://github.com/nanogarden-org/BOBW/blob/main/docs/validation.md) |
+| Bounded distributed AI | Knowledge and inference are often conflated with permission to act | [TurtleML](https://github.com/nanogarden-org/TurtleML) — executable alpha; [authority tests](https://github.com/nanogarden-org/TurtleML/blob/main/tests/test_authority.py) |
+| Governed continuity | Long-lived AI/memory systems can blur source, identity, custody, attribution, and authority | [LCA-MVP](https://github.com/nanogarden-org/LCA-MVP) — runnable 001a foundation / proposed 002 architecture; [conformance scope](https://github.com/nanogarden-org/LCA-MVP/blob/main/conformance/README.md) |
+| Workflow formalization | Useful one-off reasoning is often lost instead of becoming reusable capability | [Portfolio methodology](portfolio/methodology.html) — documented methodology; inspect the proof graph below |
 
 The recurring design pattern is: **make the claim inspectable, make the boundary explicit, make the smallest useful implementation runnable, and preserve enough provenance for another person to challenge the result.**
 
@@ -47,6 +53,8 @@ python -m unittest discover -s tests -v
 ```
 
 ## Searchable proof portfolio
+
+Maintain this evidence packet using the [Hiring reviewer documentation process](docs/hiring-review-process.md).
 
 Start with the generated architecture registry for the architecture-first interface. The preserved [`portfolio/index.html`](portfolio/index.html) remains the human-readable proof walkthrough connecting identity, credentials, projects, methodologies, third-party credibility, and public implementation evidence.
 
@@ -93,7 +101,7 @@ Each public claim should identify its evidence, maturity level, limitations, and
 
 The proof portfolio additionally separates historical third-party credibility, institutional credentials, active-development architecture, and inspectable implementation evidence rather than treating them as interchangeable forms of proof.
 
-A commit timestamp establishes repository chronology for that artifact; it does **not** by itself establish novelty, patent rights, independent invention by others, or that no earlier related work exists. Where priority or novelty matters, preserve the dated artifact and also document known related work and the specific delta being claimed.
+Git history identifies artifact versions and recorded dates. Commit dates and retained snapshots alone do not establish when an artifact became publicly accessible. Public-availability claims require a separately recorded publication or archival anchor. This packet does not establish a verified first-publication date. Neither repository chronology nor publication evidence establishes universal novelty, exclusive ownership of abstract ideas, or derivation by later work. Where novelty matters, document known related work and the specific delta being claimed.
 
 ## Authorship and publication boundary
 
