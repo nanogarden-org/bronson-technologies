@@ -1,5 +1,5 @@
 schema: bronson-technologies-proof-map/v1
-last_reviewed: '2026-08-31'
+last_reviewed: '2026-10-06'
 identity:
   professional_name: Robert Bronson
   publishing_name: Robin A. Bronson
@@ -8,6 +8,12 @@ identity:
   linkedin: https://www.linkedin.com/in/robertbronson
   github_org: https://github.com/nanogarden-org
   github_root: https://github.com/nanogarden-org/bronson-technologies
+publication_practice:
+  purpose: Publish inspectable architecture hypotheses, runnable reference implementations, and dated evidence early enough for external challenge and refinement.
+  chronology_boundary: Git history identifies versions and recorded dates; public availability requires a separate publication or archival anchor, and neither proves universal novelty or derivation.
+  challenge_path: Test the implementation, challenge invariants, report edge cases, compare related work, and preserve corrections in subsequent history.
+  protocol: ../docs/public-provenance-and-challenge.md
+  reviewer_process: ../docs/hiring-review-process.md
 credentials:
   - issuer: OpenAI Academy
     name: AI Foundations
@@ -32,19 +38,39 @@ credentials:
 projects:
   - name: Bronson Technologies
     url: https://github.com/nanogarden-org/bronson-technologies
+    role: portfolio and public proof root
+    maturity: public-release candidate
     tags: [AI-architecture-workflow-design-portfolio-provenance]
+  - name: B.o.B.W. (Best of Both Worlds)
+    url: https://github.com/nanogarden-org/BOBW
+    role: provenance-aware ingestion and candidate staging
+    maturity: tested local reference implementation
+    tags: [traveler-provenance-ingestion-rights-traceability-human-machine-readable]
   - name: TurtleML
     url: https://github.com/nanogarden-org/TurtleML
-    tags: [edge-AI-local-first-distributed-systems-authority]
-  - name: ABCI
-    url: https://github.com/nanogarden-org/ABCI
-    tags: [interfaces-edge-integrity-provenance]
+    role: local-first recursive AI/ML node architecture with bounded authority
+    maturity: 0.1.0-alpha executable architecture skeleton
+    tags: [edge-AI-local-first-distributed-systems-authority-provenance]
   - name: LCA-MVP
     url: https://github.com/nanogarden-org/LCA-MVP
-    tags: [identity-continuity-provenance-Python-Rust]
-  - name: B.o.B.W. (Best of Both Worlds)
-    status: active development
-    tags: [traveler-provenance-ingestion-rights-traceability]
+    role: governed continuity and succession architecture
+    maturity: 0.2.0-alpha architecture on runnable 001a foundation
+    tags: [identity-continuity-provenance-Python-Rust-authority]
+  - name: ABCI
+    url: https://github.com/nanogarden-org/ABCI
+    role: identity-capability-provenance-authority seam
+    maturity: architectural placeholder / research preview
+    tags: [interfaces-edge-integrity-provenance-authority]
+  - name: yt-whisper
+    url: https://github.com/nanogarden-org/yt-whisper
+    role: local transcript acquisition pipeline
+    maturity: public implementation
+    tags: [whisper-transcription-local-first-provenance]
+  - name: Phonic-Drive Analyzer
+    url: https://github.com/nanogarden-org/phonic-drive-analyzer
+    role: inspectable audio/signal analysis work
+    maturity: public implementation
+    tags: [audio-signal-analysis]
   - name: Content Factory / NanoGarden Production System
     status: active development
     tags: [content-factory-NanoGarden-production-workflow]
@@ -56,8 +82,6 @@ projects:
     status: active development
   - name: SARAH
     status: experimental
-  - name: Phonic-Drive
-    status: active development
 historical_evidence:
   - date: '2009-01-19'
     type: third-party client recommendation
@@ -66,6 +90,7 @@ historical_evidence:
     type: LinkedIn platform recognition signal
     article: articles/2024-linkedin-expert-invitation.html
 proof_paths:
+  - recruiter → capability map → implementation repository → verification
   - credential → implementation → repository evidence
   - source → traveler-provenance → transformation → release
   - market signal → Scout/PIRATE/THREAD → build decision → product
