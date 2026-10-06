@@ -2,15 +2,15 @@
 
 Bronson Technologies is the public architecture root for inspectable AI systems, workflow design, knowledge provenance, bounded automation, and early platform experiments. The developer portfolio remains available as evidence, but it is no longer the repository's organizing identity.
 
-## Work I can help an organization deliver
+## AI systems and workflow design
 
 I design AI and automation workflows around the points where information, responsibility, and permission cross between systems. My public projects demonstrate traceable intake, bounded action, and governed knowledge continuity through small, inspectable implementations.
 
-My contribution spans problem framing, architecture, workflow contracts, and reference implementations. Repository histories and project evidence make those contributions reviewable; proposed business applications are not claims of measured client savings.
+I frame the problem, define the system boundaries, and build reference implementations that make the design testable.
 
-## 90-second reviewer path
+## Selected projects
 
-If you are evaluating the work rather than browsing the whole research graph, start here:
+These projects address three recurring problems in AI and knowledge workflows.
 
 | Capability | Problem addressed | Public proof |
 | --- | --- | --- |
@@ -101,7 +101,7 @@ Each public claim should identify its evidence, maturity level, limitations, and
 
 The proof portfolio additionally separates historical third-party credibility, institutional credentials, active-development architecture, and inspectable implementation evidence rather than treating them as interchangeable forms of proof.
 
-Git history identifies artifact versions and recorded dates. Commit dates and retained snapshots alone do not establish when an artifact became publicly accessible. Public-availability claims require a separately recorded publication or archival anchor. This packet does not establish a verified first-publication date. Neither repository chronology nor publication evidence establishes universal novelty, exclusive ownership of abstract ideas, or derivation by later work. Where novelty matters, document known related work and the specific delta being claimed.
+Git history identifies artifact versions and recorded dates. Commit dates and retained snapshots alone do not establish when an artifact became publicly accessible. Public-availability claims require a separately recorded publication or archival anchor. The first public release date is not recorded here. Neither repository chronology nor publication evidence establishes universal novelty, exclusive ownership of abstract ideas, or derivation by later work. Where novelty matters, document known related work and the specific delta being claimed.
 
 ## Authorship and publication boundary
 
