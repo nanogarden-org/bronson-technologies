@@ -40,7 +40,7 @@ GitHub Pages is built as a disposable projection of repository authority:
 - `scripts/build_site.py` generates `site/`; and
 - `.github/workflows/pages.yml` validates, tests, builds, and deploys the Pages artifact from `main`.
 
-The public entry points are `/architecture/`, `/free/`, `/licensed/`, and `/developer/`. Existing profile, credential, portfolio, and proof files remain canonical in their current repository locations. The prior portfolio is projected under `/legacy/`; credentials are projected under `/developer/credentials/` with a compatibility redirect from the earlier public path.
+The public entry points are `/architecture/`, `/consulting/`, `/free/`, `/licensed/`, and `/developer/`. The consulting section presents platform-independent architecture assessment, agentic workflow governance, and applied AI workflow engineering, with explicitly illustrative reference methods rather than implied client case studies. Existing profile, credential, portfolio, and proof files remain canonical in their current repository locations. The prior portfolio is projected under `/legacy/`; credentials are projected under `/developer/credentials/` with a compatibility redirect from the earlier public path.
 
 The `/offers/` projection contains individually addressable interest-test pages for practical AI workflow resources. These pages are intentionally not downloads or mailing-list forms: they let a LinkedIn visitor inspect the scope of a proposed offer while the underlying checklist, worksheet, or tip set remains behind an explicit access decision.
 

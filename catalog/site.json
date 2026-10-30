@@ -5,10 +5,31 @@
   "base_path": "/bronson-technologies",
   "repository_url": "https://github.com/nanogarden-org/bronson-technologies",
   "navigation": [
-    {"label": "Architecture", "path": "/architecture/", "order": 10},
-    {"label": "Free", "path": "/free/", "order": 20},
-    {"label": "Licensed", "path": "/licensed/", "order": 30},
-    {"label": "Developer", "path": "/developer/", "order": 40}
+    {
+      "label": "Architecture",
+      "path": "/architecture/",
+      "order": 10
+    },
+    {
+      "label": "Consulting",
+      "path": "/consulting/",
+      "order": 15
+    },
+    {
+      "label": "Free",
+      "path": "/free/",
+      "order": 20
+    },
+    {
+      "label": "Licensed",
+      "path": "/licensed/",
+      "order": 30
+    },
+    {
+      "label": "Developer",
+      "path": "/developer/",
+      "order": 40
+    }
   ],
   "maturity_vocabulary": [
     "concept",
@@ -20,5 +41,11 @@
     "historical evidence",
     "living index"
   ],
-  "availability_vocabulary": ["free", "licensed", "reference", "planned", "not offered"]
+  "availability_vocabulary": [
+    "free",
+    "licensed",
+    "reference",
+    "planned",
+    "not offered"
+  ]
 }

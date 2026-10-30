@@ -19,8 +19,26 @@ class GeneratedSiteTests(unittest.TestCase):
         cls.registry = json.loads((ROOT / "catalog/artifacts.json").read_text(encoding="utf-8"))
 
     def test_required_entry_points_exist(self) -> None:
-        for route in ("architecture", "free", "licensed", "developer"):
+        for route in ("architecture", "consulting", "free", "licensed", "developer"):
             self.assertTrue((ROOT / "site" / route / "index.html").is_file(), route)
+
+    def test_consulting_pages_and_reference_methods_are_projected(self) -> None:
+        pages = (
+            "index.html",
+            "ai-systems-architecture/index.html",
+            "agentic-workflow-governance/index.html",
+            "applied-ai-workflow-engineering/index.html",
+            "evidence/cross-platform-assessment/index.html",
+            "evidence/authority-privacy-review/index.html",
+            "evidence/applied-workflow-prototype/index.html",
+        )
+        for filename in pages:
+            self.assertTrue((ROOT / "site" / "consulting" / filename).is_file(), filename)
+
+    def test_homepage_discloses_consulting_entry_point(self) -> None:
+        home = (ROOT / "site/index.html").read_text(encoding="utf-8")
+        self.assertIn("Explore consulting", home)
+        self.assertIn("/bronson-technologies/consulting/", home)
 
     def test_interest_test_offer_pages_are_projected(self) -> None:
         for filename in (
