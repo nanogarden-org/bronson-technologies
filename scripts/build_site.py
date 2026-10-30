@@ -87,7 +87,7 @@ def build() -> None:
     (OUTPUT / ".nojekyll").write_text("", encoding="utf-8")
 
     featured = [by_id[item_id] for item_id in ("bobw", "content-factory", "abci", "phonic-drive")]
-    home_body = f"""<section class="hero shell"><p class="eyebrow">ARCHITECTURE BEFORE PORTFOLIO</p><h1>Systems that preserve what they know, how they know it, and what they are allowed to do.</h1><p class="lead">{esc(config['strapline'])}</p><div class="actions"><a class="button primary" href="{esc(base)}/architecture/">Explore the architecture</a><a class="button" href="{esc(base)}/free/">Open free resources</a></div></section>
+    home_body = f"""<section class="hero shell"><p class="eyebrow">ARCHITECTURE BEFORE PORTFOLIO</p><h1>Systems that preserve what they know, how they know it, and what they are allowed to do.</h1><p class="lead">{esc(config['strapline'])}</p><div class="actions"><a class="button primary" href="{esc(base)}/architecture/">Explore the architecture</a><a class="button" href="{esc(base)}/consulting/">Explore consulting</a><a class="button" href="{esc(base)}/free/">Open free resources</a></div></section>
 <section class="shell statement"><p>This is not a project gallery. It is a public interface to a connected architecture: observation, interpretation, continuity, production, release, commerce, feedback, and embodiment.</p></section>
 <section class="shell"><div class="section-heading"><div><p class="eyebrow">SELECTED NODES</p><h2>Inspect the working system</h2></div><a href="{esc(base)}/architecture/">View full ontology →</a></div><div class="card-grid">{''.join(artifact_card(item, config) for item in featured)}</div></section>
 <section class="shell boundary"><div><p class="eyebrow">AUTHORITY BOUNDARY</p><h2>The website is a projection.</h2></div><p>Git history, canonical records, source artifacts, tests, and explicit evidence paths remain authoritative. Presentation can change without rewriting provenance.</p></section>"""
@@ -149,6 +149,10 @@ def build() -> None:
     offers_source = ROOT / "offers"
     if offers_source.is_dir():
         shutil.copytree(offers_source, OUTPUT / "offers")
+
+    consulting_source = ROOT / "consulting"
+    if consulting_source.is_dir():
+        shutil.copytree(consulting_source, OUTPUT / "consulting")
 
     developer = by_id["developer-record"]
     developer_body = f"""<section class="page-hero shell"><p class="eyebrow">DEVELOPER BRANCH</p><h1>Robin Abigayle Bronson</h1><p class="lead">AI Systems Architect, systems thinker, and developer of the architectures indexed here. The person is an accountable branch of the system—not the organizing frame for every artifact.</p></section><section class="shell detail-grid"><article><p class="eyebrow">CANONICAL RECORDS</p><h2>Profile and credentials remain in place.</h2><div class="link-stack"><a href="{esc(config['repository_url'])}/tree/main/profile">Profile source records <span>→</span></a><a href="{esc(base)}/developer/credentials/">Credential index <span>→</span></a><a href="{esc(config['repository_url'])}/blob/main/evidence-index.md">Evidence index <span>→</span></a><a href="{esc(base)}/legacy/profile.html">Legacy portfolio profile <span>→</span></a><a href="{esc(base)}/legacy/credentials.html">Legacy portfolio credentials <span>→</span></a></div></article><aside><p class="eyebrow">RECORD STATUS</p>{badge('Maturity', developer['maturity'], 'maturity')}{badge('Availability', developer['availability']['class'], 'availability')}<p>The existing canonical files were not deleted, renamed, or rewritten. They are now reached through this developer entry point.</p></aside></section>"""
